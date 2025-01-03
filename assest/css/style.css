@@ -74,10 +74,11 @@ header{
 }
 
 #navbarfix #nav-1:hover {
-    color: #86C425;
+    color: #65941a;
     background: transparent;
-    border-right: 2px solid #86C425;
-    border-left: 2px solid #86C425;
+    border-right: 2px solid #72a521;
+    border-left: 2px solid #72a71d;
+    font-weight: bold;
 
 }
 
@@ -127,11 +128,12 @@ header{
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    opacity: 0.6;
+    opacity: 0.5;
+    background-color: rgb(2, 82, 255);
 }
 
 #banner .carousel-indicators [data-bs-target].active {
-    background-color: #EEAA23;
+    background-color: #FF6D00;
     opacity: 1;
 }
 
@@ -188,16 +190,12 @@ header{
 /* left side */
 /* content  */
 .scrollspy-example{
-    height: 100vh;
+    height: 1000px;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.scrollspy-example #top-item .card{
-    overflow: hidden;
-}
-.scrollspy-example #top-item .card img{
-   height: 220px;
-   width: 100%;
+.scrollspy-example h2{
+    font-weight: bold;
 }
 .scrollspy-example .heading-border{
     border-bottom: 3px solid #ff6d00;
@@ -205,6 +203,15 @@ header{
     margin: 14px auto;
     border-radius: 5px;
 }
+.scrollspy-example #top-item .card{
+    overflow: hidden;
+}
+
+.scrollspy-example .card img{
+   height: 220px;
+   width: 100%;
+}
+
 /* content  */
 /* main section end */
 
@@ -223,6 +230,10 @@ header{
     #banner .carousel-inner img {
         height: 350px;
     }
+    .scrollspy-example{
+        height: auto;
+        overflow: none;
+    }
 }
 
 /* max-width : 768px */
@@ -235,3 +246,12 @@ header{
 }
 
 /* max-width : 576px */
+/* max-width : 450px */
+@media screen and (max-width:450px) {
+    .scrollspy-example #top-item .card img{
+        height: 150px;
+        width: 100%;
+     }
+}
+
+/* max-width : 450px */
