@@ -117,19 +117,62 @@
 #banner .carousel-inner img {
     height: 450px;
 }
-#banner .carousel-indicators [data-bs-target]{
+
+#banner .carousel-indicators [data-bs-target] {
     height: 15px;
     width: 15px;
     border-radius: 50%;
     opacity: 0.6;
 }
-#banner .carousel-indicators [data-bs-target].active{
+
+#banner .carousel-indicators [data-bs-target].active {
     background-color: #EEAA23;
     opacity: 1;
 }
+
 /* banner section end */
 /* main section start */
-
+/* left side */
+.list-menu{
+    box-shadow: 0 4px 5px 0 rgba(167, 167, 167, 0.75);
+    padding: 0;
+}
+.list-menu li{
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fbfbfb;
+    font-weight: 500;
+    list-style: none;
+}
+.list-menu li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+.list-menu li a::before{
+    font-family: 'Font Awesome 6 Free';
+    content: '\f105';
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    padding-right:10px;
+}
+.list-menu li a.active {
+    background-color: #157AC3;
+    transition: all 0.5s;
+    color: white;
+}
+.list-menu li a:hover{
+    background-color: #FF6D00;
+    color: white;
+}
+/* left side */
+/* content  */
+.scrollspy-example{
+    height: 489px;
+    overflow-y: auto;
+}
+/* content  */
 /* main section end */
 
 
