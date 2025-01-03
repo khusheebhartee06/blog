@@ -85,9 +85,11 @@
     color: #eeaa23;
     border: none;
 }
-#navbarfix .navbar-toggler-icon{
+
+#navbarfix .navbar-toggler-icon {
     display: none;
 }
+
 /* login btn */
 #login button {
     transition: all 0.3s 0.1s;
@@ -112,7 +114,48 @@
 /* Nav close */
 
 /* banner section start */
-#banner .carousel-inner img{
+#banner .carousel-inner img {
     height: 450px;
 }
+#banner .carousel-indicators [data-bs-target]{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+#banner .carousel-indicators [data-bs-target].active{
+    background-color: #EEAA23;
+    opacity: 1;
+}
 /* banner section end */
+/* main section start */
+
+/* main section end */
+
+
+
+
+
+
+
+
+
+
+
+/* max-width : 768px */
+@media screen and (max-width:768px) {
+    #banner .carousel-inner img {
+        height: 350px;
+    }
+}
+
+/* max-width : 768px */
+
+/* max-width : 576px */
+@media screen and (max-width:576px) {
+    #banner .carousel-inner img {
+        height: 300px;
+    }
+}
+
+/* max-width : 576px */
