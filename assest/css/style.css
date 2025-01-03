@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none !important;
+}
 /* topheadicon section start*/
 #topheadicon {
     position: relative;
@@ -147,10 +149,18 @@ header{
     list-style: none;
 }
 .list-menu .list-heading{
-    padding: 17px 20px;
     background-color: #157AC3;
     transition: all 0.5s;
     color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.list-menu .list-heading a{
+    color: white;
+    padding: 18px 20px;
+}
+.list-menu .list-heading a::before{
+    content: '';
 }
 .list-menu li a{
     display: block;
@@ -178,8 +188,22 @@ header{
 /* left side */
 /* content  */
 .scrollspy-example{
-    height: 489px;
+    height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+.scrollspy-example #top-item .card{
+    overflow: hidden;
+}
+.scrollspy-example #top-item .card img{
+   height: 220px;
+   width: 100%;
+}
+.scrollspy-example .heading-border{
+    border-bottom: 3px solid #ff6d00;
+    width: 10%;
+    margin: 14px auto;
+    border-radius: 5px;
 }
 /* content  */
 /* main section end */
