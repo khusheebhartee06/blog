@@ -25,13 +25,13 @@
 }
 
 #topheadicon li:hover a {
-    color: #eeaa23;
+    color: #EDA827;
     transform: translateY(-8px);
 
 }
 
 #topheadicon #button .btn {
-    background-color: #eeaa23;
+    background-color: #EDA827;
     color: #fff;
     transition: all 0.5s 0.1s ease-in;
     font-weight: bold;
@@ -47,6 +47,9 @@
 }
 
 /*topheadicon section end*/
+header{
+    box-shadow: 0px 4px 10px 0 gainsboro;
+}
 #navbarfix {
     width: 100%;
 }
@@ -82,7 +85,7 @@
 }
 
 #navbarfix .navbar-toggler {
-    color: #eeaa23;
+    color: #EDA827;
     border: none;
 }
 
@@ -93,7 +96,7 @@
 /* login btn */
 #login button {
     transition: all 0.3s 0.1s;
-    background-color: #eeaa23;
+    background-color: #EDA827;
     width: 80px;
     height: 40px;
     border: none;
@@ -143,11 +146,17 @@
     font-weight: 500;
     list-style: none;
 }
+.list-menu .list-heading{
+    padding: 17px 20px;
+    background-color: #157AC3;
+    transition: all 0.5s;
+    color: white;
+}
 .list-menu li a{
     display: block;
-    padding: 15px 20px;
     text-decoration: none;
     color: black;
+    padding: 14px 20px;
 }
 .list-menu li a::before{
     font-family: 'Font Awesome 6 Free';
@@ -158,12 +167,12 @@
     padding-right:10px;
 }
 .list-menu li a.active {
-    background-color: #157AC3;
+    background-color: #FF6D00;
     transition: all 0.5s;
     color: white;
 }
 .list-menu li a:hover{
-    background-color: #FF6D00;
+    background-color: #157AC3;
     color: white;
 }
 /* left side */
